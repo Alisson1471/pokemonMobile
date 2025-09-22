@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BaseStatsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- HP -->
+        <TextView
+            android:id="@+id/tv_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progress_hp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="45"
+            android:max="100"
+            android:progressTint="@android:color/holo_red_light"
+            app:layout_constraintStart_toEndOf="@id/tv_hp"
+            app:layout_constraintTop_toTopOf="@id/tv_hp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Attack -->
+        <TextView
+            android:id="@+id/tv_attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_hp"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_attack"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_attack"
+            app:layout_constraintTop_toTopOf="@id/tv_attack"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Defense"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_attack"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_defense"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_defense"
+            app:layout_constraintTop_toTopOf="@id/tv_defense"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_sp_attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sp Attack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_defense"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_sp_attack"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_sp_attack"
+            app:layout_constraintTop_toTopOf="@id/tv_sp_attack"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_sp_defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sp Defense"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sp_attack"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_sp_defense"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_sp_defense"
+            app:layout_constraintTop_toTopOf="@id/tv_sp_defense"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sp_defense"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_speed"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_speed"
+            app:layout_constraintTop_toTopOf="@id/tv_speed"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_speed"
+            android:layout_marginTop="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_total"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:progress="60"
+            android:max="100"
+            android:progressTint="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@id/tv_total"
+            app:layout_constraintTop_toTopOf="@id/tv_total"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
